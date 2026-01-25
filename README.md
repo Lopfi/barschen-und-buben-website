@@ -1,292 +1,506 @@
-# 🎓 Scholar-Lite
+# Quiet Bar Theme
 
-<div align="center">
+A beautiful, vintage/industrial-styled website template for bars, pubs, and restaurants. Built with [Astro](https://astro.build/) for exceptional performance and ease of customization.
 
-![Astro](https://img.shields.io/badge/Astro_v6-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Pagefind](https://img.shields.io/badge/Pagefind-Search-FF0000?style=for-the-badge&logo=algolia&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+![Quiet Bar Theme](public/images/logo.svg)
 
-**[English](./README.md) | [简体中文](./README.zh-CN.md)**
+> **Quiet Bar Theme** created by [Larry Xue](https://larryxue.dev)
+> 
+> Need help with **Customizing**, **Hosting**, or **Web Development**? [Contact me](https://larryxue.dev/contact) for professional support.
 
-> ## **⚡ Create your site in 30 seconds**
-> ```bash
-> npm create astro@latest -- --template fjd2004711/scholar-lite
-> ```
+## One-Click Deploy
 
-<p align="center">
-  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/fjd2004711/scholar-lite" target="_blank">
-    <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
-  </a>
-  <a href="https://vercel.com/new/clone?repository-url=https://github.com/fjd2004711/scholar-lite" target="_blank">
-    <img src="https://vercel.com/button" alt="Deploy with Vercel">
-  </a>
-</p>
+Deploy your own Quiet Bar site with one click:
 
-**The Next-Generation Static Website Template for Academic Labs & Scholars.**
-*Blazing fast, zero-config BibTeX import, and multilingual search engine built-in.*
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/larry-xue/quiet-bar)
 
----
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/larry-xue/quiet-bar)
 
-## 🚀 Quick Start (No Coding Required)
+**Cloudflare Pages:** Go to [Cloudflare Dashboard](https://dash.cloudflare.com/) → Pages → Create → Connect to Git → Select `larry-xue/quiet-bar`
 
-1.  **Click** the `Deploy to Netlify` or `Deploy with Vercel` button above.
-2.  **Wait** for the deployment to finish.
-3.  **Go to** your new GitHub repository and find `citations.bib`.
-4.  **Upload** your own BibTeX file to replace it.
-5.  **Done!** Your website updates automatically in 1 minute.
+## Features
 
----
+- **Zero Dependencies** - Only Astro, no Tailwind CSS, no UI frameworks, no bloat
+- **Ultra Lightweight** - Pure CSS styling, minimal vanilla JS, blazing fast load times
+- **Vintage/Industrial Aesthetic** - Deep charcoal backgrounds, aged brass accents, elegant typography
+- **JSON-based CMS** - All content managed through a single `site.json` file
+- **Fully Responsive** - Mobile-first design with desktop, tablet, and mobile breakpoints
+- **SEO Optimized** - Meta tags, Open Graph, Twitter Cards, and LocalBusiness structured data
+- **Accessible** - Semantic HTML, ARIA labels, keyboard navigation, high contrast ratios
+- **Performance First** - Lazy-loaded images, minimal JavaScript, optimized fonts
+- **Interactive Components** - Accordion menus, lightbox gallery with keyboard support
+- **Article Pages** - Built-in blog/article system with list and detail pages
 
-<div align="center" style="margin-top: 20px;">
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://scholar-lite-demo.netlify.app/" target="_blank">
-          <img src="https://img.shields.io/badge/Live_Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" />
-        </a>
-        <br />
-        <strong>Live Preview</strong>
-      </td>
-      <td align="center">
-        <a href="https://github.com/fjd2004711/scholar-lite" target="_blank">
-          <img src="https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source Code" />
-        </a>
-        <br />
-        <strong>Repository</strong>
-      </td>
-    </tr>
-  </table>
-</div>
+### Why No Third-Party Dependencies?
 
-<div align="center">
-  <img src="public/assets/screenshots/home-desktop-mockup.png" width="70%" alt="Desktop View" />
-  <img src="public/assets/screenshots/mobile-view-mockup.png" width="25%" alt="Mobile View" />
-</div>
+This theme intentionally uses **only Astro** as its dependency:
 
-</div>
+| What We Don't Use | Why |
+|-------------------|-----|
+| Tailwind CSS | Pure CSS with custom properties is lighter and more maintainable |
+| React/Vue/Svelte | Static site doesn't need client-side frameworks |
+| UI Component Libraries | Custom components are leaner and fully customizable |
+| Animation Libraries | CSS animations handle everything we need |
+| Lightbox Libraries | ~50 lines of vanilla JS does the job |
 
----
+**Result:** A complete, production-ready site with only **one dependency** in `package.json`.
 
-## 🚀 Why Scholar-Lite?
-
-### ⚡ Unmatched Performance
-*   **Zero JS by Default**: Built on **Astro v6**, sending **0kb** of JavaScript to the client for content pages.
-*   **100/100 Lighthouse**: Optimized out-of-the-box for Performance, Accessibility, Best Practices, and SEO.
-*   **Tailwind CSS v4**: The latest utility-first CSS framework for rapid, modern styling.
-
-<p align="center">
-  <img src="public/assets/screenshots/lighthouse-score.png" width="80%" alt="Lighthouse Score">
-</p>
-
-### 🤖 Smart Automation
-*   **One-Click BibTeX Import**: Stop manually copying papers. Drop your `citations.bib` and run one command.
-*   **Intelligent Parsing**: Automatically extracts **PDF links**, **Code repositories**, **Project Websites**, **Videos**, and **Cover images**.
-*   **Asset Management**: Smart fallback system for missing publication covers.
-*   **Auto-Badging**: Automatically highlights "Best Paper", "Oral", or "Spotlight" awards based on BibTeX notes.
-
-### 🌍 Global Reach
-*   **Multilingual Search**: Built-in **Pagefind** search engine supporting **8 languages** (English, Chinese, Japanese, Korean, French, German, Spanish, Russian).
-*   **i18n Ready**: Native support for internationalization with type-safe translations.
-
----
-
-## 🆚 Comparison: Scholar-Lite vs. Hugo Academic
-
-| Feature | 🎓 Scholar-Lite | 🐢 Hugo Academic (Wowchemy) |
-| :--- | :--- | :--- |
-| **Tech Stack** | **Astro v6 + React + Tailwind v4** (Modern & Mainstream) | Hugo + Go Templates (Steep learning curve) |
-| **Performance** | **100/100 Lighthouse** (Zero JS by default) | Good, but often bloated with heavy JS |
-| **BibTeX Import** | **Zero-Config** (Drag & drop `citations.bib`) | Complex Python scripts / Manual entry |
-| **Customization** | **Component-based** (Edit `.astro` / `.tsx` files directly) | Rigid Theme (Overriding internal templates is hard) |
-| **Multilingual** | **Native i18n + Pagefind** (Search in 8 languages) | Partial support, search often breaks |
-| **Dev Experience** | **Hot Reload (HMR)** in milliseconds | Slower rebuilds on large sites |
-| **Ecosystem** | **NPM / Node.js** (Access to millions of packages) | Go Modules (Limited web-focused packages) |
-
----
-
-## 🛠️ Quick Start
+## Quick Start
 
 ### Prerequisites
-*   Node.js v22.12.0 or higher
 
-### 1. Installation
+- [Node.js](https://nodejs.org/) - One of the following versions:
+  - `v18.20.8` or higher (v18.x LTS)
+  - `v20.3.0` or higher (v20.x LTS)
+  - `v22.0.0` or higher
+  - ⚠️ **Note:** v19.x and v21.x are **not supported**
+- npm, yarn, or pnpm
+
+### Installation
+
+#### Option 1: Using Astro CLI (Recommended)
+
+Create a new project using the Astro template command:
+
 ```bash
-git clone https://github.com/your-repo/scholar-lite.git
-cd scholar-lite
-npm install
+npm create astro@latest -- --template larry-xue/quiet-bar
 ```
 
-### 2. Development
-Start the local server with hot module replacement:
+Then start the development server:
+
 ```bash
+cd quiet-bar
 npm run dev
 ```
-Visit `http://localhost:4321`.
 
-### 3. Production Build
-Generate the static site and search index:
+#### Option 2: Clone the Repository
+
+```bash
+git clone https://github.com/larry-xue/quiet-bar.git
+cd quiet-bar
+npm install
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:4321` to see your site.
+
+## Project Structure
+
+```
+quiet-bar/
+├── public/
+│   ├── favicon.svg           # Site favicon
+│   ├── fonts/                # Self-hosted fonts (optional)
+│   └── images/
+│       ├── logo.svg          # Your bar's logo
+│       ├── gallery/          # Gallery images
+│       └── articles/         # Article cover images (optional)
+├── src/
+│   ├── components/           # Astro components
+│   │   ├── Header.astro      # Hero section with logo
+│   │   ├── InfoBar.astro     # Sticky contact bar
+│   │   ├── Hours.astro       # Opening hours
+│   │   ├── Tagline.astro     # Brand positioning
+│   │   ├── Menu.astro        # Drinks/food menu
+│   │   ├── Gallery.astro     # Photo gallery with lightbox
+│   │   ├── Location.astro    # Map and directions
+│   │   ├── Press.astro       # Media reviews
+│   │   ├── Contact.astro     # Contact info and notices
+│   │   ├── Footer.astro      # Site footer
+│   │   ├── ArticleCard.astro  # Article card for listings
+│   │   ├── ArticleHeader.astro # Article header component
+│   │   └── ArticleContent.astro # Article content renderer
+│   ├── content/
+│   │   └── articles/         # Markdown article files
+│   ├── data/
+│   │   └── site.json         # ⭐ YOUR CONTENT GOES HERE
+│   ├── layouts/
+│   │   └── Layout.astro      # Base HTML layout with SEO
+│   ├── pages/
+│   │   ├── index.astro       # Main page
+│   │   ├── 404.astro         # 404 error page
+│   │   └── articles/
+│   │       ├── index.astro   # Articles list page
+│   │       └── [slug].astro  # Individual article page
+│   └── styles/
+│       └── global.css        # Global styles and design tokens
+├── astro.config.mjs          # Astro configuration
+├── package.json              # Only 1 dependency: astro
+└── tsconfig.json
+```
+
+## Content Management
+
+All your bar's content is managed through a single JSON file: `src/data/site.json`
+
+### Basic Information
+
+```json
+{
+  "name": "YOUR BAR NAME",
+  "shortName": "SHORT",
+  "established": "2025",
+  "phone": "555-123-4567",
+  "email": "hello@yourbar.com",
+  "tagline": "Your catchy tagline here."
+}
+```
+
+### Address & Location
+
+```json
+{
+  "address": {
+    "full": "123 Main Street, City, State 12345",
+    "short": "123 Main St, City",
+    "crossStreets": "between Oak & Pine"
+  },
+  "coordinates": {
+    "lat": 40.7128,
+    "lng": -74.0060
+  }
+}
+```
+
+> **Tip:** Get coordinates from [Google Maps](https://maps.google.com) by right-clicking on your location.
+
+### Opening Hours
+
+```json
+{
+  "openingHours": {
+    "weekday": "Mon – Thu: 5:00 PM – 1:00 AM",
+    "weekend": "Fri – Sun: 3:00 PM – 2:00 AM",
+    "holiday": "Closed on Christmas Day"
+  }
+}
+```
+
+Set `holiday` to `null` if you don't have special holiday hours.
+
+### Menu Items
+
+```json
+{
+  "menu": [
+    {
+      "category": "Drafts",
+      "items": [
+        { "name": "House Lager", "description": "Crisp and refreshing", "badge": null },
+        { "name": "Seasonal IPA", "description": "Rotating selection", "badge": "seasonal" },
+        { "name": "Signature Stout", "description": "Rich and creamy", "badge": "featured" }
+      ]
+    },
+    {
+      "category": "Wines",
+      "items": [...]
+    },
+    {
+      "category": "Spirits",
+      "items": [...]
+    }
+  ]
+}
+```
+
+**Badge Options:**
+- `null` - No badge
+- `"featured"` - Shows "★ Featured" badge
+- `"seasonal"` - Shows "⟡ Seasonal" badge
+
+### Transit Information
+
+```json
+{
+  "transit": [
+    { "line": "A/C/E", "station": "14th Street" },
+    { "line": "L", "station": "8th Avenue" },
+    { "line": "Bus M14", "station": "Main & 1st" }
+  ]
+}
+```
+
+### Gallery Images
+
+```json
+{
+  "gallery": [
+    { "src": "/images/gallery/interior.jpg", "alt": "Cozy bar interior" },
+    { "src": "/images/gallery/cocktails.jpg", "alt": "Signature cocktails" },
+    { "src": "/images/gallery/exterior.jpg", "alt": "Street view at night" }
+  ]
+}
+```
+
+**Image Guidelines:**
+- Recommended size: 800x600px or larger
+- Formats: JPG, PNG, WebP, or SVG
+- Place images in `public/images/gallery/`
+
+### Press & Reviews
+
+```json
+{
+  "press": [
+    {
+      "source": "Local News",
+      "quote": "The best hidden gem in town...",
+      "url": "https://example.com/review"
+    },
+    {
+      "source": "Food Magazine",
+      "quote": "A must-visit destination.",
+      "url": null
+    }
+  ]
+}
+```
+
+Set `url` to `null` if there's no link to the original article.
+
+### Important Notices
+
+```json
+{
+  "notices": [
+    "NO RESERVATIONS",
+    "CASH PREFERRED",
+    "21+ ONLY WITH VALID ID"
+  ]
+}
+```
+
+### Social Media
+
+```json
+{
+  "social": {
+    "instagram": "https://instagram.com/yourbar"
+  }
+}
+```
+
+### SEO Settings
+
+```json
+{
+  "seo": {
+    "metaTitle": "Your Bar Name | Neighborhood Bar in City",
+    "metaDescription": "A warm neighborhood bar serving craft beers and cocktails at 123 Main Street."
+  }
+}
+```
+
+### Articles
+
+Add blog posts or news articles to your site using Markdown files:
+
+**Step 1:** Create a Markdown file in `src/content/articles/` (e.g., `the-art-of-cocktail-making.md`):
+
+```markdown
+# Welcome to The Quiet Bar
+
+Welcome to The Quiet Bar, a neighborhood gem nestled in the heart of Little Italy...
+
+## Our Philosophy
+
+Our philosophy is simple: quality over quantity...
+```
+
+**Step 2:** Add the article metadata to `src/data/site.json`:
+
+```json
+{
+  "articles": [
+    {
+      "slug": "welcome-to-quiet-bar",
+      "title": "Welcome to The Quiet Bar",
+      "excerpt": "A warm corner in the city where good drinks meet better company...",
+      "date": "2024-01-15",
+      "author": "The Quiet Bar Team",
+      "coverImage": "/images/articles/welcome.jpg",
+      "markdownFile": "the-art-of-cocktail-making.md"
+    }
+  ]
+}
+```
+
+**Article Fields:**
+- `slug` - URL-friendly identifier (e.g., "welcome-to-quiet-bar")
+- `title` - Article headline
+- `excerpt` - Short summary for listings
+- `date` - Publication date (YYYY-MM-DD format)
+- `author` - Author name (optional)
+- `coverImage` - Cover image path (optional)
+- `markdownFile` - Filename of the Markdown file in `src/content/articles/` (required)
+
+**Content Guidelines:**
+- Use Markdown syntax for formatting (headers, bold, italic, lists, links, etc.)
+- Markdown files should be placed in `src/content/articles/`
+- Images should be placed in `public/images/articles/`
+- Articles are automatically sorted by date (newest first)
+- Access articles at `/articles` (list) and `/articles/[slug]` (individual article)
+- Astro's native Markdown support handles all formatting automatically
+
+### Robots.txt
+
+The `public/robots.txt` file controls search engine crawling. By default, all crawlers are allowed:
+
+```txt
+User-agent: *
+Allow: /
+```
+
+To add a sitemap, uncomment and update the Sitemap line with your domain:
+
+```txt
+Sitemap: https://yourdomain.com/sitemap.xml
+```
+
+## Customization
+
+### Changing Colors
+
+Edit the CSS custom properties in `src/styles/global.css`:
+
+```css
+:root {
+  /* Background Colors */
+  --color-bg-deep: #1a1a18;      /* Main background */
+  --color-bg-mid: #2a2a26;       /* Section backgrounds */
+  --color-bg-light: #3a3a36;     /* Hover states */
+  
+  /* Brand Colors */
+  --color-primary: #c9a227;      /* Accent color (brass) */
+  --color-secondary: #f5f0e6;    /* Light text/headings */
+  --color-accent: #a85a32;       /* Secondary accent (terracotta) */
+  
+  /* Text Colors */
+  --color-text: #e8e4dc;         /* Body text */
+  --color-text-muted: #9a968e;   /* Subtle text */
+}
+```
+
+### Changing Fonts
+
+1. Update the Google Fonts link in `src/layouts/Layout.astro`
+2. Update the font family variables in `src/styles/global.css`:
+
+```css
+:root {
+  --font-heading: 'Your Heading Font', serif;
+  --font-body: 'Your Body Font', sans-serif;
+}
+```
+
+### Adding/Removing Sections
+
+Edit `src/pages/index.astro` to add, remove, or reorder sections:
+
+```astro
+<Layout>
+  <Header />
+  <InfoBar />
+  
+  <main id="main-content">
+    <Tagline />
+    <Hours />
+    <Menu />
+    <!-- <Gallery /> --> <!-- Commented out to hide -->
+    <Location />
+    <Press />
+    <Contact />
+  </main>
+  
+  <Footer />
+</Layout>
+```
+
+## Deployment
+
+### Build for Production
+
 ```bash
 npm run build
 ```
-*Note: The search index is generated at build time. Search functionality requires the build step.*
 
----
+This creates an optimized static site in the `dist/` folder.
 
-## 📚 Smart Publication & Book Management
+### Preview Production Build
 
-Scholar-Lite features a powerful **BibTeX Import Engine** located in `scripts/import-bibtex.js`, supporting both **Papers** and **Books**.
+```bash
+npm run preview
+```
 
-### How to Import
-1.  **Export BibTeX**: Export your bibliography as `citations.bib` from Zotero, Mendeley, or Google Scholar.
-2.  **Place File**: Save `citations.bib` in the project root.
-3.  **Run Import**:
-    ```bash
-    npm run import-bibtex
-    ```
-4.  **Auto-Classification**: The system automatically classifies entries based on BibTeX type:
-    *   `@article`, `@inproceedings`, etc. -> Imported to **Publications** (`src/content/publications`)
-    *   `@book` -> Imported to **Books** (`src/content/books`)
+### Deploy Options
 
-### Advanced BibTeX Features
+#### Option 1: One-Click Deploy (Recommended)
 
-The importer maps BibTeX fields to website elements intelligently:
+Use the deploy buttons at the top of this README to instantly deploy to:
+- **Netlify** - Free tier available, automatic HTTPS
+- **Vercel** - Free tier available, great performance
+- **Cloudflare Pages** - Free tier available, global CDN
 
-| BibTeX Field | Website Element | Smart Behavior |
-|--------------|-----------------|----------------|
-| `cover`/`image` | Cover Image | Auto-detects local images in `src/assets/`. **Highly recommended for books**. |
-| `publisher` | Publisher | For books, `publisher` is automatically displayed as the venue. |
-| `pdf`/`url`/`file` | PDF Button | Cleans Zotero path formats (e.g., `files/mypaper.pdf`). |
-| `code`/`github` | Code Button | Generates a GitHub/Code link button. |
-| `website`/`project` | **Project Page** | Generates a Globe icon link to the project homepage. |
-| `demo` | **Live Demo** | Generates a "Demo" button (Web App / HuggingFace / Video). |
-| `video`/`recording` | **Video** | Generates a Video link button. |
-| `slides`/`ppt` | **Slides** | Generates a Slides download button. |
-| `award`/`note` | **Badges** | Auto-generates Gold/Blue/Red badges for "Best Paper", "Oral", etc. |
+#### Option 2: Manual Deploy
 
-### BibTeX Entry Examples
+**Netlify:**
+1. Push your code to GitHub
+2. Connect your repo to [Netlify](https://netlify.com)
+3. Build command: `npm run build`
+4. Publish directory: `dist`
 
-#### 1. Paper
-```bibtex
-@article{gpt4,
-  title={GPT-4 Technical Report},
-  author={OpenAI},
-  year={2024},
-  journal={ArXiv},
-  url={https://arxiv.org/pdf/2303.08774.pdf},
-  code={https://github.com/openai/evals},
-  cover={../../assets/gpt4-cover.jpg},
-  note={Tech Report}
+**Vercel:**
+1. Push your code to GitHub
+2. Import your repo on [Vercel](https://vercel.com)
+3. Vercel auto-detects Astro settings
+
+**Cloudflare Pages:**
+1. Push your code to GitHub
+2. Connect your repo to [Cloudflare Pages](https://pages.cloudflare.com)
+3. Build command: `npm run build`
+4. Build output directory: `dist`
+
+#### Option 3: Self-Hosted / VPS
+
+1. Build the site: `npm run build`
+2. Upload the `dist/` folder to your server
+3. Configure your web server (Nginx, Apache) to serve static files
+
+**Nginx example:**
+
+```nginx
+server {
+    listen 80;
+    server_name yourbar.com;
+    root /var/www/quiet-bar/dist;
+    index index.html;
+    
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
 }
 ```
 
-#### 2. Book
-Simply set the entry type to `@book`, and the system will automatically place it in the "Books" section.
-```bibtex
-@book{deeplearning,
-  title={Deep Learning},
-  author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},
-  publisher={MIT Press},
-  year={2016},
-  url={http://www.deeplearningbook.org},
-  cover={../../assets/book-deep-learning.jpg}
-}
-```
+## Commands Reference
 
----
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install dependencies |
+| `npm run dev` | Start dev server at `localhost:4321` |
+| `npm run build` | Build for production to `./dist/` |
+| `npm run preview` | Preview production build locally |
 
-## 🌟 Best Practices
+## Browser Support
 
-### 📁 Directory Structure
-*   **Images**: Store website assets in `src/assets/images/`. Use `.webp` or optimized `.jpg` for better performance.
-*   **Team Photos**: Place headshots in `src/assets/team/`. Square aspect ratio (1:1) is recommended.
-*   **Content**: All editable content (News, Team, Research info) lives in `src/content/`.
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-### 📝 Content Management
-*   **News**: Add new Markdown files in `src/content/news/`. The filename doesn't matter, but sorting is based on the `date` field.
-*   **Team**: Add members in `src/content/team/`. Use `weight` to control display order (lower numbers appear first).
-*   **Research Fields**: Add Markdown files in `src/content/research/`. Use `order` field to control display order.
-*   **Translations**: Edit `src/i18n/ui.ts` to modify UI text (e.g., navigation menu, buttons) for all supported languages.
+## License
 
-### 🎓 More Academic Achievements
-Beyond papers and books, the system supports managing other academic achievements. Simply create Markdown files in the corresponding folders.
+MIT License - Feel free to use this template for personal or commercial projects.
 
-#### 1. Software Copyrights
-*   **Location**: `src/content/softwares/`
-*   **Example**:
-    ```markdown
-    ---
-    title: "Intelligent Image Processing System V1.0"
-    developers: ["John Doe", "Jane Smith"]
-    number: "2023SR123456"
-    date: 2023-06-15
-    description: "An automated image processing platform based on deep learning."
-    ---
-    ```
+## Support
 
-#### 2. Invention Patents
-*   **Location**: `src/content/patents/`
-*   **Example**:
-    ```markdown
-    ---
-    title: "A Method for Image Recognition Based on Attention Mechanism"
-    inventors: ["John Doe", "Bob Johnson"]
-    number: "CN102345678B"
-    date: 2024-01-20
-    status: "Granted" # Options: Granted, Pending, Filed
-    ---
-    ```
-
-#### 3. Group Honors
-*   **Location**: `src/content/honors/`
-*   **Example**:
-    ```markdown
-    ---
-    title: "18th Challenge Cup National College Student Extracurricular Academic Science and Technology Works Competition"
-    award: "Grand Prize"
-    date: 2023-10-30
-    year: "2023"
-    type: "Challenge Cup"  # Options: Challenge Cup, Internet+, Other
-    level: "Special"       # Options: Special, First, Second, Third
-    ---
-    ```
-
-### 🖼️ Image Optimization
-Scholar-Lite automatically optimizes images imported from `src/assets/`.
-*   **Avoid**: Putting large images in `public/`.
-*   **Prefer**: Importing images in Markdown or Astro components to leverage automatic compression and lazy loading.
-
----
-
-## 🚢 Deployment
-
-Scholar-Lite is a static site that can be deployed anywhere.
-
-### Recommended Platforms
-
-| Platform | Global Speed | Ease of Use | Cost |
-|----------|--------------|-------------|------|
-| **Cloudflare Pages** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Free |
-| **Vercel** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Free |
-| **Netlify** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Free |
-| **GitHub Pages** | ⭐⭐⭐ | ⭐⭐⭐⭐ | Free |
-
-### Cloudflare Pages / Vercel / Netlify
-1.  Connect your GitHub/GitLab repository.
-2.  **Build Command**: `npm run build`
-3.  **Output Directory**: `dist`
-4.  Deploy!
-
-### GitHub Pages / GitLab Pages
-This template includes CI/CD configurations (`.github/workflows` and `.gitlab-ci.yml`) to automatically build and deploy to GitHub/GitLab Pages on push.
-
----
-
-<div align="center">
-
-**[Scholar-Lite Team](https://github.com/fjd2004711)**
-<br>
-*Empowering academic research with modern web technology.*
-
-</div>
+Need help? [Open an issue](https://github.com/larry-xue/quiet-bar/issues) on GitHub or [contact the creator](https://larryxue.dev/contact) for professional support.
