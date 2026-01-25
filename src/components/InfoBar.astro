@@ -13,15 +13,6 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
     </div>
     
     <a 
-      href={phoneHref} 
-      class="info-bar__item info-bar__item--phone"
-      aria-label={`Call us at ${siteData.phone}`}
-    >
-      <span class="info-bar__icon" aria-hidden="true">☎</span>
-      <span class="info-bar__value">{siteData.phone}</span>
-    </a>
-    
-    <a 
       href={mapsUrl} 
       class="info-bar__item info-bar__item--address"
       target="_blank"

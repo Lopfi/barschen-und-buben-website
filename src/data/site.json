@@ -7,11 +7,11 @@
   "address": {
     "full": "Barschenweg 1, 85635 Höhenkirchen-Siegertsbrunn",
     "short": "Barschenweg 1, Hösi",
-    "crossStreets": ""
+    "crossStreets": "Direkt an der S-Bahn Wächterhof"
   },
   "coordinates": {
-    "lat": 40.7185,
-    "lng": -73.9975
+    "lat": 48.03479752857789,
+    "lng": 11.719172756084722
   },
   "openingHours": {
     "weekday": "Mon – Thu: 5:00 PM – 1:00 AM",
@@ -19,40 +19,8 @@
     "holiday": null
   },
   "tagline": "A warm corner in the city. Good drinks, better company.",
-  "menu": [
-    {
-      "category": "Drafts",
-      "items": [
-        { "name": "House Pilsner", "description": "Crisp, clean, local", "badge": null },
-        { "name": "Brooklyn Lager", "description": "Amber Vienna-style", "badge": null },
-        { "name": "Rotating IPA", "description": "Ask your bartender", "badge": "seasonal" },
-        { "name": "Guinness", "description": "The classic stout", "badge": null }
-      ]
-    },
-    {
-      "category": "Wines",
-      "items": [
-        { "name": "House Red", "description": "Spanish Garnacha", "badge": null },
-        { "name": "House White", "description": "Italian Pinot Grigio", "badge": null },
-        { "name": "Natural Selection", "description": "Rotating organic picks", "badge": "featured" },
-        { "name": "Prosecco", "description": "By the glass or bottle", "badge": null }
-      ]
-    },
-    {
-      "category": "Spirits",
-      "items": [
-        { "name": "Quiet Old Fashioned", "description": "Bourbon, bitters, orange", "badge": "featured" },
-        { "name": "Negroni", "description": "Gin, Campari, sweet vermouth", "badge": null },
-        { "name": "Whiskey Sour", "description": "Rye, lemon, egg white", "badge": null },
-        { "name": "Mezcal Mule", "description": "Smoky twist on the classic", "badge": "seasonal" }
-      ]
-    }
-  ],
   "transit": [
-    { "line": "J/Z", "station": "Bowery" },
-    { "line": "B/D", "station": "Grand Street" },
-    { "line": "6", "station": "Spring Street" },
-    { "line": "Bus M103", "station": "Grand St & Mulberry" }
+    { "line": "S5", "station": "Wächterhof" }
   ],
   "gallery": [
     {
@@ -98,9 +66,9 @@
     }
   ],
   "notices": [
-    "NO RESERVATIONS",
-    "CASH PREFERRED (CARD MINIMUM $20)",
-    "21+ ONLY WITH VALID ID"
+    "Fisch selbst mitbringen",
+    "Angel auch",
+    "Wir haben keinen See"
   ],
   "social": {
     "instagram": "https://www.instagram.com/barschen_und_buben_verein/"

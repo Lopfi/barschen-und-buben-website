@@ -2,7 +2,7 @@
 
 A beautiful, vintage/industrial-styled website template for bars, pubs, and restaurants. Built with [Astro](https://astro.build/) for exceptional performance and ease of customization.
 
-![Quiet Bar Theme](public/images/logo.svg)
+![Quiet Bar Theme](public/images/logo.png)
 
 > **Quiet Bar Theme** created by [Larry Xue](https://larryxue.dev)
 > 
@@ -92,7 +92,7 @@ quiet-bar/
 │   ├── favicon.svg           # Site favicon
 │   ├── fonts/                # Self-hosted fonts (optional)
 │   └── images/
-│       ├── logo.svg          # Your bar's logo
+│       ├── logo.png          # Your bar's logo
 │       ├── gallery/          # Gallery images
 │       └── articles/         # Article cover images (optional)
 ├── src/

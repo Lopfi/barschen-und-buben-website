@@ -7,39 +7,32 @@ const emailHref = `mailto:${siteData.email}`;
 
 <section class="contact section" aria-labelledby="contact-title" id="contact">
   <div class="container container--narrow">
-    <h2 id="contact-title" class="section__title">Get In Touch</h2>
-    
-    <div class="contact__grid">
-      <a href={phoneHref} class="contact__card" aria-label={`Call us at ${siteData.phone}`}>
-        <span class="contact__icon" aria-hidden="true">☎</span>
-        <span class="contact__label">Phone</span>
-        <span class="contact__value">{siteData.phone}</span>
-      </a>
-      
-      <a href={emailHref} class="contact__card" aria-label={`Email us at ${siteData.email}`}>
-        <span class="contact__icon" aria-hidden="true">✉</span>
-        <span class="contact__label">Email</span>
-        <span class="contact__value">{siteData.email}</span>
-      </a>
-      
-      {siteData.social?.instagram && (
-        <a 
-          href={siteData.social.instagram} 
-          class="contact__card"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Follow us on Instagram (opens in new tab)"
-        >
-          <span class="contact__icon" aria-hidden="true">◉</span>
-          <span class="contact__label">Instagram</span>
-          <span class="contact__value">@quietbarnyc</span>
+    <h2 id="contact-title" class="section__title">Kontakt aufnehmen</h2>
+
+      <div class="contact__grid">
+        <a href={emailHref} class="contact__card" aria-label={`E-Mail an ${siteData.email}`}>
+          <span class="contact__icon" aria-hidden="true">✉</span>
+          <span class="contact__label">E‑Mail</span>
+          <span class="contact__value">{siteData.email}</span>
         </a>
-      )}
-    </div>
-    
+
+        {siteData.social?.instagram && (
+          <a 
+            href={siteData.social.instagram} 
+            class="contact__card"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Folge uns auf Instagram (öffnet in neuem Tab)"
+          >
+            <span class="contact__icon" aria-hidden="true">◉</span>
+            <span class="contact__label">Instagram</span>
+            <span class="contact__value">@barschen_und_buben_verein</span>
+          </a>
+        )}
+      </div>
     {siteData.notices && siteData.notices.length > 0 && (
       <aside class="contact__notices" aria-labelledby="notices-heading">
-        <h3 id="notices-heading" class="contact__notices-title">Please Note</h3>
+        <h3 id="notices-heading" class="contact__notices-title">Bitte beachten</h3>
         <ul class="contact__notices-list" role="list">
           {siteData.notices.map((notice: string) => (
             <li class="contact__notice">{notice}</li>
@@ -47,6 +40,8 @@ const emailHref = `mailto:${siteData.email}`;
         </ul>
       </aside>
     )}
+    </div>
+    
   </div>
 </section>
 
