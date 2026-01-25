@@ -10,12 +10,12 @@ const osmEmbedUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${coor
 
 <section class="location section section--alt" aria-labelledby="location-title" id="location">
   <div class="container">
-    <h2 id="location-title" class="section__title">Find Us</h2>
+    <h2 id="location-title" class="section__title">Hier findest du uns</h2>
     
     <div class="location__content">
       <div class="location__info">
         <div class="location__address">
-          <h3 class="location__label">Address</h3>
+          <h3 class="location__label">Adresse</h3>
           <p class="location__text">
             {address.full}
             <br />
@@ -28,12 +28,12 @@ const osmEmbedUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${coor
             rel="noopener noreferrer"
             aria-label="Get directions on Google Maps (opens in new tab)"
           >
-            Get Directions →
+            Route planen →
           </a>
         </div>
         
         <div class="location__transit">
-          <h3 class="location__label">Getting Here</h3>
+          <h3 class="location__label">Anfahrt</h3>
           <ul class="location__transit-list" role="list">
             {transit.map((item: { line: string; station: string }) => (
               <li class="location__transit-item">
