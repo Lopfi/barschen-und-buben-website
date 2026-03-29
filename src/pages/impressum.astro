@@ -1,0 +1,45 @@
+title: Impressum
+
+
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+
+
+<Layout title="Impressum">
+  <section class="impressum section" aria-labelledby="impressum-title">
+    <div class="container container--narrow">
+      <h1 id="impressum-title" class="section__title">Impressum</h1>
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
+      <p>
+        Barschen & Buben v.<br>
+        Barschenweg 1<br>
+        85635 Höhenkirchen-Siegertsbrunn <br>
+      </p>
+      <p><strong>Vertreten durch:</strong><br>
+        Lukas Kugler
+      </p>
+      <p><strong>Kontakt:</strong><br>
+        Telefon: 01234 567890<br>
+        E-Mail: info@barschenundbuben.org
+      </p>
+      <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
+        Lukas Kugler<br>
+        Barschenweg 1<br>
+        85635 Höhenkirchen-Siegertsbrunn
+      </p>
+      <p>Quelle: <a href="https://www.e-recht24.de" target="_blank" rel="noopener">e-recht24.de</a></p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.impressum.section {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+.impressum .container--narrow {
+  max-width: 600px;
+}
+</style>
